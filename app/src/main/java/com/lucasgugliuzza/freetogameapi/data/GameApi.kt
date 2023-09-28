@@ -13,7 +13,7 @@ interface GameApi {
 
 
         @GET(GAMES_ENDPOINT)
-        suspend fun getGame() :Response<List<GameDto>>
+        suspend fun getGames() :Response<List<GameDto>>
 
         @GET(GAME_ID_ENDPOINT)
         suspend fun getGameById(@Query("id") id:Int) : Response<SpecificGameDto>
